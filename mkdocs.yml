@@ -1,2 +1,7 @@
 site_name: My Docs
 theme: material
+
+
+plugins:
+  - search
+  - exclude-pages

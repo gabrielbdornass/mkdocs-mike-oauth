@@ -24,3 +24,6 @@ docker_run = { cmd = "docker run --rm -p 8080:4180 my-mkdocs-site", help = "Runs
 
 [tool.poetry]
 package-mode = false
+
+[tool.poetry.plugins."mkdocs.plugins"]
+"exclude-pages" = "plugins.exclude_pages:ExcludePagesPlugin"
