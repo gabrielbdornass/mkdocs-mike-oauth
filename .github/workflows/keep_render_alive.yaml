@@ -1,0 +1,22 @@
+name: Keep Render Alive
+
+on:
+  schedule:
+    - cron: '*/14 12-23 * * *'  # From 12 PM to 11 PM UTC (9 AM to 8 PM BRT)
+    - cron: '*/14 0-2 * * *'    # From 12 AM to 2 AM UTC (9 PM to 11 PM BRT)
+  workflow_dispatch:
+
+jobs:
+  keep_render_alive:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send request to keep Render alive
+      run: |
+        curl -s -o /dev/null -w "%{http_code}" https://notes.braico.me/
+    - name: Workflow failure notification
+      uses: JasonEtco/create-an-issue@v2
+      if: failure()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      with:
+        filename: .github/workflow_keep_render_alive_failure.md
