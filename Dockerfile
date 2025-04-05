@@ -13,7 +13,7 @@ ENTRYPOINT ["/bin/oauth2-proxy", \
             "--cookie-expire=0h0m30s", \
             "--skip-provider-button=true", \
             "--skip-auth-route=^/$", \
-            "--skip-auth-route=^/(?!(closed/))", \
+            "--skip-auth-route=^/[^c][^l][^o][^s][^e][^d].*", \
             "--skip-auth-route=^/assets/.*", \
             "--skip-auth-route=^/img/.*", \
             "--skip-auth-route=^/css/.*", \
