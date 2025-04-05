@@ -4,4 +4,3 @@ theme: material
 
 plugins:
   - search
-  - exclude-pages
