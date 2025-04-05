@@ -9,7 +9,8 @@ readme = "README.md"
 requires-python = ">=3.10,<4.0"
 dependencies = [
     "mkdocs-material (>=9.6.9,<10.0.0)",
-    "taskipy (>=1.14.1,<2.0.0)"
+    "taskipy (>=1.14.1,<2.0.0)",
+    "mkdocs-publish-control (>=0.1.2,<0.2.0)"
 ]
 
 [tool.poetry.group.dev.dependencies]

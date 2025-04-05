@@ -579,6 +579,21 @@ files = [
 ]
 
 [[package]]
+name = "mkdocs-publish-control"
+version = "0.1.2"
+description = "MkDocs plugin to control page publishing based on metadata"
+optional = false
+python-versions = "<4.0,>=3.10"
+groups = ["main"]
+files = [
+    {file = "mkdocs_publish_control-0.1.2-py3-none-any.whl", hash = "sha256:50fb23e5e9b061db96faf4f6df1037be35eec69109dd22926868be095ab7f4ca"},
+    {file = "mkdocs_publish_control-0.1.2.tar.gz", hash = "sha256:12bd638b4b9f6e3e6ec036a3950c87bf393aa5bff4fafab507ab2d81bc90c35a"},
+]
+
+[package.dependencies]
+mkdocs = ">=1.6.1,<2.0.0"
+
+[[package]]
 name = "mslex"
 version = "1.3.0"
 description = "shlex for windows"
@@ -1140,4 +1155,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4.0"
-content-hash = "092f13e06b4fb6b789f1679d13b1631f55a1f33eeaba25980be8d8656fa0b38b"
+content-hash = "0ef077e8f3c3dfc02a61a7416c29f893d1a44008a227dd8b5072f6bfe47e8d6a"

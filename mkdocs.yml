@@ -4,3 +4,5 @@ theme: material
 
 plugins:
   - search
+  - publish-control:
+      show_all: false

@@ -1,7 +1,7 @@
 ---
-exclude: true
+hidden: true
 ---
 
 # Welcome to MkDocs - 2
 
-Sem Informação
+Esta página poderá aparecer apenas com o servidor ligado via `MKDOCS_SHOW_ALL=true mkdocs serve`.
